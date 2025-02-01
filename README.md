@@ -30,7 +30,12 @@ code .
 
 Step 7: Visual Studio Code should open. In the top banner, navigate to Terminal>New Terminal
 
-Step 8: In this new terminal, use this line and click the localhost link it provides: 
+Step 8: In this new terminal, install the required packages needed to run the project by using:
+```
+npm install
+```
+
+Step 9: Finally, to launch the website as a localhost, use this line and click the link it provides: 
 ```
 npm run dev
 ```

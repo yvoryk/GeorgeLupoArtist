@@ -35,7 +35,7 @@ Step 8: In this new terminal, install the required packages needed to run the pr
 npm install
 ```
 
-Step 9: Finally, to launch the website as a localhost, use this line and click the link it provides: 
+Step 9: Finally, to launch the website as a localhost, use this line in the terminal open in Visual Studio Code and click the link it provides: 
 ```
 npm run dev
 ```

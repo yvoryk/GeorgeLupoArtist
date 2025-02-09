@@ -1,3 +1,4 @@
+// app/components/Nav.jsx
 "use client";
 import React from 'react';
 import Link from 'next/link';
@@ -8,7 +9,7 @@ const Nav = () => {
     <nav className="flex-between w-full mb-16 pt-7">
       <Link href="/" className="flex gap-2 flex-center">
         <Image 
-          src="/images/other/signature.png" // need to ensure we have a signature image in this path
+          src="/images/other/signature.png"
           alt="signature"
           width={300}
           height={200}
@@ -18,14 +19,11 @@ const Nav = () => {
       <Link href="/" className="flex gap-2 flex-center">
         Home
       </Link>
-      <Link href="/collection" className="flex gap-2 flex-center">
-        Collection
+      <Link href="/Collection" className="flex gap-2 flex-center">        
+      Collection
       </Link>
       <Link href="/exhibitions" className="flex gap-2 flex-center">
         Awards & Exhibitions
-      </Link>
-      <Link href="/library" className="flex gap-2 flex-center">
-        Library
       </Link>
       <Link href="/contact" className="flex gap-2 flex-center">
         Contact

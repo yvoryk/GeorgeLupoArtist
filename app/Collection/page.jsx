@@ -1,8 +1,7 @@
-// app/library/page.jsx
 import React from 'react';
 
 const PaintingLibrary = () => {
-  // Extended painting data with updated image paths.
+  //sample image data
   const paintings = [
     {
       id: 1,

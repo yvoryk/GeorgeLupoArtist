@@ -1,4 +1,5 @@
-/*import React, { useState } from 'react';
+"use client";
+import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 const Login = () => {
@@ -12,8 +13,8 @@ const Login = () => {
   };
 
   return (
-    <section className="w-full flex-center flex-col">
-      <h1 className="head_text text-center">Login</h1>
+    <section className="w-full flex-center flex-col mt-8">
+      <h1 className="head_text text-center text-black mb-6">Login</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-80">
         <input 
           type="text"
@@ -33,9 +34,13 @@ const Login = () => {
           Login
         </button>
       </form>
+      <p className="mt-4 text-center text-gray-700">
+        Demo Credentials: <br />
+        <span className="font-bold">login: gergelupo</span> <br />
+        <span className="font-bold">password: 1111</span>
+      </p>
     </section>
   );
 };
 
 export default Login;
-*/

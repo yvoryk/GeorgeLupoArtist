@@ -16,7 +16,7 @@ const Home = () => (
   <main className="w-full flex-center flex-col">
     {/* Welcome Section */}
     <section className='w-full flex-center flex-col'>
-      <h1 className='head_text text-center'>
+      <h1 className='head_text text-center mb-4'>
         Welcome
         <br className='max-md:hidden' />
         <span className='orange_gradient text-center'> Paintings</span>

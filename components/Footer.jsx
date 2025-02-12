@@ -1,11 +1,10 @@
-// components/Footer.jsx
 import React from 'react';
 
 const Footer = () => {
   return (
     <div className="flex justify-center space-x-4 p-4">
       <a 
-        href="https://www.instagram.com/yaroslav_waryk/" 
+        href="https://www.instagram.com/" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="text-blue-500 hover:underline"

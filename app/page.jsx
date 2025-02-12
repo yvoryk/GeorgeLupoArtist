@@ -5,11 +5,19 @@ import { ImageCarousel } from "../components/ImageCarousel.tsx"
 import { AlignCenter } from 'lucide-react';
 
 const CAROUSEL = [
-  "/images/Matrix 125.jpg", 
-  "/images/Matrix 141.jpg", 
-  "/images/Matrix Flag.jpg", 
-  "/images/Red Richard.jpg", 
-  "/images/Matrix 135.jpg"
+  "/images/Matrix 125.jpg",
+  "/images/Matrix 127a.jpg",
+  "/images/Matrix 128.jpg",
+  "/images/Matrix 135.jpg",
+  "/images/Matrix 141.jpg",
+  "/images/Matrix 143.jpg",
+  "/images/Matrix 145.jpg",
+  "/images/Matrix 146.jpg",
+  "/images/Matrix 148.jpg",
+  "/images/Matrix Flag.jpg",
+  "/images/Pythagoras 44.jpg",
+  "/images/Red Richard.jpg",
+  
 ];
 
 const Home = () => (

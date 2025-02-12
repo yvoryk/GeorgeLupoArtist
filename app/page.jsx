@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { ImageCarousel } from "../components/ImageCarousel.tsx"
-import { AlignCenter } from 'lucide-react';
+//import { AlignCenter } from 'lucide-react';
 
 const CAROUSEL = [
   "/images/Matrix 125.jpg",

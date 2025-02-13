@@ -1,5 +1,3 @@
-import React from 'react';
-
 const exhibitionsList = [
   {
     year: "2024-2025",

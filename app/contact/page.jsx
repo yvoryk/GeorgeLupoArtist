@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Contact = () => (
   <section className="w-full flex-center flex-col py-12 px-6">
     <h1 className="head_text text-center mb-5">

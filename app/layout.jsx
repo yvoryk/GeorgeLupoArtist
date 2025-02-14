@@ -10,9 +10,20 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "My Website Title",
-  description: "My website description.",
-  keywords: ["palm beach art", "galleries", "fine art"],
+  title: "GeorgeLupoArtist",
+  description:
+    "George Lupo Artist showcases vibrant non-objective paintings and contemporary art inspired by the spirit of Palm Beach.",
+  keywords: [
+    "palm beach art",
+    "galleries",
+    "fine art",
+    "contemporary art",
+    "non-objective painting",
+    "modern art",
+    "George Lupo",
+    "art for sale",
+    "visual artist"
+  ],
 };
 
 function RootLayout({ children }) {

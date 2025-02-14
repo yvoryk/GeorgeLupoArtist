@@ -35,14 +35,15 @@ const Home = () => (
         <ImageCarousel imageUrls={CAROUSEL} />
       </div>
 
-      {/* About Me Button */}
-      <div className="w-full flex justify-center mt-6">
-        <Link href="/about">
-          <button className="px-6 py-3 bg-gray-200 hover:bg-gray-300 text-gray-900 font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
-            About Me
-          </button>
-        </Link>
-      </div>
+{/* About Me Button */}
+<div className="w-full flex justify-center mt-6">
+  <Link href="/about">
+    <button className="px-8 py-3 bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold rounded-full shadow-xl transition transform hover:scale-105 hover:shadow-2xl">
+      About Me
+    </button>
+  </Link>
+</div>
+
     </section>
   </main>
 );

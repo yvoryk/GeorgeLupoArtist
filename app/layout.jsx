@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import MessageWidget from "../components/MessageWidget";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -52,6 +53,7 @@ function RootLayout({ children }) {
           <Nav />
           {children}
           <Footer />
+          <MessageWidget />
         </main>
       </body>
     </html>

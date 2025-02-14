@@ -144,69 +144,69 @@ const PaintingLibrary = () => {
   };
 
   return (
-    <section className="w-full flex-center flex-col">
+    <section className="w-full flex flex-col items-center py-10">
       <h1 className="head_text text-center">Painting Library</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-full px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full px-4">
         {paintings.map((painting, index) => (
-          <div key={painting.id} className="border p-4 rounded shadow">
-            {/* Clicking on an image opens the modal */}
+          <div key={painting.id} className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition duration-300">
             <img 
               src={painting.image} 
               alt={painting.title} 
-              className="w-full h-auto mb-4 cursor-pointer hover:scale-105 transition-transform"
+              className="w-full h-auto mb-4 rounded cursor-pointer transform hover:scale-105 transition duration-300"
               onClick={() => openModal(index)}
             />
-            <h2 className="text-xl font-bold">{painting.title}</h2>
-            <p><strong>Dimensions:</strong> {painting.dimensions}</p>
-            <p><strong>Medium:</strong> {painting.medium}</p>
-            <p><strong>Notes:</strong> {painting.notes}</p>
-            <p><strong>Price:</strong> {painting.price}</p>
+            <h2 className="text-xl font-bold mb-2">{painting.title}</h2>
+            <p className="text-sm text-gray-600"><strong>Dimensions:</strong> {painting.dimensions}</p>
+            <p className="text-sm text-gray-600"><strong>Medium:</strong> {painting.medium}</p>
+            <p className="text-sm text-gray-600"><strong>Notes:</strong> {painting.notes}</p>
+            <p className="text-sm font-semibold text-gray-800"><strong>Price:</strong> {painting.price}</p>
           </div>
         ))}
       </div>
 
       {/* Modal (Popup View) */}
       {selectedPainting && (
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-70 z-50">
-          <div className="bg-white p-6 rounded shadow-lg max-w-2xl relative flex flex-col items-center">
-            {/* Close button */}
+        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50">
+          <div className="relative bg-white p-6 rounded-2xl shadow-2xl max-w-2xl w-full">
+            {/* Close Button */}
             <button 
               onClick={closeModal} 
-              className="absolute top-2 right-2 bg-gray-300 hover:bg-gray-400 text-gray-800 px-3 py-1 rounded"
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl"
             >
-              ✕
+              &times;
             </button>
 
-            {/* Previous arrow */}
-            <button 
-              onClick={prevPainting} 
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-600 text-white p-3 rounded-full hover:bg-gray-800"
-            >
-              ◀
-            </button>
+            <div className="relative">
+              {/* Previous Arrow */}
+              <button 
+                onClick={prevPainting} 
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-gray-700 to-gray-900 text-white p-3 rounded-full hover:scale-110 transition duration-300 shadow-lg"
+              >
+                &#9664;
+              </button>
 
-            {/* Enlarged image */}
-            <img 
-              src={selectedPainting.image} 
-              alt={selectedPainting.title} 
-              className="w-full h-auto rounded"
-            />
-            
-            {/* Next arrow */}
-            <button 
-              onClick={nextPainting} 
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-600 text-white p-3 rounded-full hover:bg-gray-800"
-            >
-              ▶
-            </button>
+              {/* Next Arrow */}
+              <button 
+                onClick={nextPainting} 
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-gray-700 to-gray-900 text-white p-3 rounded-full hover:scale-110 transition duration-300 shadow-lg"
+              >
+                &#9654;
+              </button>
 
-            {/* Painting details in the modal */}
-            <div className="mt-4 text-center">
-              <h2 className="text-2xl font-bold">{selectedPainting.title}</h2>
-              <p className="text-lg"><strong>Dimensions:</strong> {selectedPainting.dimensions}</p>
-              <p className="text-lg"><strong>Medium:</strong> {selectedPainting.medium}</p>
-              <p className="text-lg"><strong>Notes:</strong> {selectedPainting.notes}</p>
-              <p className="text-lg font-semibold"><strong>Price:</strong> {selectedPainting.price}</p>
+              <img 
+                src={selectedPainting.image} 
+                alt={selectedPainting.title} 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            {/* Painting Details */}
+            <div className="mt-6 text-center">
+              <h2 className="text-2xl font-bold mb-2">{selectedPainting.title}</h2>
+              <p className="text-base text-gray-600"><strong>Dimensions:</strong> {selectedPainting.dimensions}</p>
+              <p className="text-base text-gray-600"><strong>Medium:</strong> {selectedPainting.medium}</p>
+              <p className="text-base text-gray-600"><strong>Notes:</strong> {selectedPainting.notes}</p>
+              <p className="text-lg font-semibold text-gray-800 mt-2"><strong>Price:</strong> {selectedPainting.price}</p>
             </div>
           </div>
         </div>

@@ -1,14 +1,17 @@
+import { ContactForm } from "../../components/ContactForm";
+
 const Contact = () => (
   <section className="w-full flex-center flex-col py-12 px-6">
     <h1 className="head_text text-center mb-5">
       Contact
       <br className="max-md:hidden" />
-      <span className="orange_gradient text-center text-5xl font-bold"> Us</span>
     </h1>
     
     <p className="desc text-center mb-5">
       For inquiries or further information, please reach out to us.
     </p>
+
+    <ContactForm></ContactForm>
     
     <p className="text-center">
       <strong>Email:</strong> <a href="mailto:george.lupo.app@gmail.com" className="text-blue-500">george.lupo.app@gmail.com</a>
@@ -23,7 +26,7 @@ const Contact = () => (
     </p>
     
     <p className="text-center mt-6 italic text-sm">
-      All prices of my colorful paintings include free shipping to anywhere in the continental United States.
+      All paintings include free shipping to anywhere in the continental United States.
     </p>
   </section>
 );

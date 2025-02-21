@@ -144,9 +144,9 @@ const PaintingLibrary = () => {
   };
 
   return (
-    <section className="w-full flex flex-col items-center py-10">
+    <section className="w-full flex flex-col items-center py-4">
       <h1 className="head_text text-center">Painting Library</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9 w-full px-4">
         {paintings.map((painting, index) => (
           <div key={painting.id} className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition duration-300">
             <img 
